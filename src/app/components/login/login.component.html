@@ -1,0 +1,18 @@
+<div style="border: 1px solid red;">
+  <div style="border: 1px solid blue">
+    <form (submit)="onSubmitLogin()" [formGroup]="form" id="loginForm">
+      <div>
+        <label for="userName">უზერის სახელი</label>
+        <input type="text" formControlName="userName"  id="userName">
+      </div>
+      <div>
+        <label for="password">უზერის პაროლი</label>
+        <input type="text" formControlName="password" id="password">
+      </div>
+    </form>
+    <div>
+      <button class="btn btn-warning" form="loginForm">შესვლა</button>
+    </div>
+  </div>
+
+</div>
